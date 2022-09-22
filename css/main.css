@@ -215,6 +215,10 @@ header {
   display: flex;
   gap: 30px;
 }
+.navbar__ul li:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
 .navbar__ul a {
   font-weight: 500;
 }
@@ -555,6 +559,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 36px;
+}
+.footer__ul li:hover {
+  transform: scale(105%);
+  cursor: pointer;
 }
 .footer__extra {
   font-weight: 500;
