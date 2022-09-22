@@ -229,7 +229,7 @@ header {
     height: 20px;
   }
   .navbar__ul {
-    transition: ease-in all 500ms;
+    transition: linear all 350ms;
     position: absolute;
     top: 0;
     right: 0;
@@ -240,14 +240,19 @@ header {
     padding: 23px 15px;
     background-color: #001c37;
     visibility: hidden;
-    opacity: 0.5;
     height: 0;
+    opacity: 0.5;
     width: 30%;
   }
 }
 @media (max-width: 1024px) and (max-width: 640px) {
   .navbar__ul {
     width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar__ul a {
+    opacity: 0;
   }
 }
 @media (max-width: 1024px) {
@@ -260,14 +265,12 @@ header {
 }
 
 .open {
+  height: 100%;
   opacity: 1;
   visibility: visible;
-  height: 100%;
 }
-@media (max-height: 465px) {
-  .open {
-    height: fit-content;
-  }
+.open a {
+  opacity: 1;
 }
 
 .logo {
